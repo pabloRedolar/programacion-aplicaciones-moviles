@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:src="@drawable/imagenMobiles" />
+        android:src="@drawable/cat" />
 
     <TextView
         android:layout_width="match_parent"
@@ -26,12 +26,14 @@
         android:id="@+id/etEdad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20sp"
+        android:layout_marginHorizontal="20dp"
         android:gravity="center"
         android:hint="Introduce tu edad"
+        android:inputType="number"
         android:maxLines="1"/>
 
     <Button
+        android:id="@+id/btnCalcular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
@@ -40,6 +42,7 @@
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/tvRespuesta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"

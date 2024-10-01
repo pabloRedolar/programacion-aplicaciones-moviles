@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">App02_RegistroSuperheroes</string>
+    <string name="bio">Bio</string>
+    <string name="biografia_del_super_heroe">Biografia del Super heroe</string>
+    <string name="power">power</string>
+    <string name="bio_of_the_superhero">Bio of the Superhero</string>
+    <string name="save">Save</string>
 </resources>

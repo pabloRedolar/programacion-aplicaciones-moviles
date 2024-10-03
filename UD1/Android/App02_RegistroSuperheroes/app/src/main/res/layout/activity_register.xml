@@ -15,19 +15,18 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="292dp"
+            android:layout_height="236dp"
             android:adjustViewBounds="true"
+            android:src="@drawable/baseline_add_a_photo_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+            app:layout_constraintVertical_bias="0.021" />
 
         <TextView
-            android:id="@+id/heroName"
+            android:id="@+id/heroNameRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -38,7 +37,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
         <TextView
-            android:id="@+id/alter_ego_text"
+            android:id="@+id/alterEgoRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -49,7 +48,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv1" />
 
         <TextView
-            android:id="@+id/alter_ego_text2"
+            android:id="@+id/bioEditRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -62,13 +61,14 @@
             android:id="@+id/tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="376dp"
             android:text="Alter Ego"
             android:textColor="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/heroName"
-            app:layout_constraintTop_toBottomOf="@+id/heroName" />
+            app:layout_constraintStart_toStartOf="@+id/heroNameRegister"
+            app:layout_constraintTop_toBottomOf="@+id/heroNameRegister" />
 
         <TextView
             android:id="@+id/tv"
@@ -79,26 +79,30 @@
             android:text="Bio"
             android:textColor="@android:color/darker_gray"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/alter_ego_text" />
+            app:layout_constraintTop_toBottomOf="@+id/alterEgoRegister" />
 
         <TextView
             android:id="@+id/tv2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Bio"
+            android:layout_width="52dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="56dp"
+            android:text="@"
             android:textColor="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="532dp" />
+            app:layout_constraintTop_toBottomOf="@+id/bioEditRegister" />
 
         <RatingBar
-            android:id="@+id/ratingBar"
+            android:id="@+id/ratingBarRegister"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
             android:progressTint="#FFD600"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="560dp" />
+            app:layout_constraintTop_toBottomOf="@+id/tv2"
+            android:isIndicator="false"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -18,19 +18,20 @@
             android:id="@+id/supehero_img"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            tools:src="@tools:sample/avatars" />
+            android:src="@drawable/baseline_add_a_photo_24" />
 
         <EditText
-            android:id="@+id/et_heroname"
+            android:id="@+id/heronameMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/supehero_img"
-            android:layout_marginStart="16dp"
             android:layout_alignTop="@+id/supehero_img"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="-4dp"
+            android:layout_toEndOf="@+id/supehero_img"
             android:hint="Super-Hero name" />
 
         <EditText
-            android:id="@+id/alterego"
+            android:id="@+id/alteregoMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -58,7 +59,7 @@
             android:layout_centerHorizontal="true" />
 
         <EditText
-            android:id="@+id/bio_edit"
+            android:id="@+id/bioEditMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/bio_title"
@@ -69,7 +70,7 @@
             android:id="@+id/power_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/bio_edit"
+            android:layout_below="@+id/bioEditMain"
             android:text="@string/power"
             android:textSize="18sp"
             android:layout_marginTop="16dp"
@@ -77,7 +78,7 @@
             android:layout_centerHorizontal="true" />
 
         <RatingBar
-            android:id="@+id/powerBar"
+            android:id="@+id/powerBarMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/power_title"

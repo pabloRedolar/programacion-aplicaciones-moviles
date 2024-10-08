@@ -1,6 +1,7 @@
 package org.iesch.app02_registrosuperheroes
 
 import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -38,10 +39,13 @@ class RegisterActivity : AppCompatActivity() {
 
         // 10 - Nos creamos una variable bundle que recoge todos los valores traídos
 
+        val extras:Bundle = intent.extras!!
         val bundle: Bundle = intent.extras!!
 
         val superHero = bundle.getParcelable<Hero>(HERO_KEY)!!
-        val bitmap = bundle.getParcelable<Bitmap>(FOTO_KEY)!!
+//      val bitmap = bundle.getParcelable<Bitmap>(FOTO_KEY)!!
+        val imagePath = extras.getString(FOTO_KEY)
+        val bitmap = BitmapFactory.decodeFile(imagePath)
 
         // 12 - Los mostramos en pantalla
 
@@ -49,7 +53,9 @@ class RegisterActivity : AppCompatActivity() {
         binding.alterEgoRegister.text = superHero.alterEgo
         binding.bioEditRegister.text = superHero.bio
         binding.ratingBarRegister.rating = superHero.power
-        binding.imageView.setImageBitmap(bitmap)
 
+        if (bitmap != null){
+            binding.imageView.setImageBitmap(bitmap)
+        }
     }
 }
